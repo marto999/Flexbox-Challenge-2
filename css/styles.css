@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#main>article {
+    flex: 1;
+}
+
+#main>nav,
+#main>article {}
+
+#main>nav {
+    order: -1;
+    height: 106vw;
+}
+
+header {
+    height: 100%;
+}
+
+footer {
+    background: #0d0247;
+    height: 7vw;
+    margin: -15px 0 0 0;
+    padding: 0 0 0 0;
+}
+
+article {}
+
+.footer p {
+    color: white;
+    padding: 12px 0 0 45px;
+    font-size: 1.2vw;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 0em;
+}
+
+.headerimg {
+    width: 100%;
+}
+
+.headlogo {
+    background-color: white;
+    margin: -4px 0 0 0px;
+    height: 7vw;
+}
+
+.headerlogo {
+    width: 32%;
+    margin: -15px 0 0 63px;
+}
+
+.banner {
+    width: inherit;
+}
+
+.bannerimg {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    background: #0d0247;
+}
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+
+/* grid1 */
+
+.grid1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 391px;
+}
+
+.grid1>div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid1>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box {
+    margin: 21px -10px 2px 30px;
+}
+
+.fleximg {
+    width: 150px;
+    height: 152px;
+    padding: 7px 0 0 7px;
+}
+
+
+/* grid2 */
+
+.grid2x2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid2x2>div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    flex-direction: column;
+}
+
+.grid2x2>div>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.cardbox {
+    margin: 7px 34px 17px 0;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardbox hr {
+    width: 100%;
+    color: gray;
+}
+
+.leermas {
+    padding: 0 0 0 28px;
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.footnavimg {
+    height: 57px;
+    margin: -18px 0 0 0;
+}
+
+.cardbox1 {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardbox h2 {
+    padding: 0 0 0 23px;
+}
+
+.box1img {
+    width: 518px;
+    height: 234PX;
+}
+
+.bi1 {
+    width: 77px;
+    margin: -66px 0 0 385px
+}
+
+.b1p {
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    padding: 0 24px 0 24px;
+    FONT-SIZE: 21PX;
+    COLOR: gray;
+}
+
+.b1p2 {
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    padding: 0 24px 0 24px;
+    FONT-SIZE: 21PX;
+    COLOR: #dca61c;
+    font-style: italic;
+}
+
+.footnav {
+    width: 100%;
+    margin: -39px 0 0 0px;
+    padding: 0 0 0 389px;
+}
+
+.footnav2 {
+    float: right;
+    margin: -42px 0 0 341px;
+}
+
+.footnav a img {
+    padding: 1px;
+}
+
+.footnav2 a img {
+    width: 28px;
+    padding: 1px;
+}
+
+.cardbox2 {}
+
+.box2img {
+    height: 234PX;
+}
+
+.cardbox3 {}
+
+.cardbox4 {}
+
+
+/* sub button */
+
+.subbutton {
+    margin: 0;
+    height: 6vw;
+}
+
+.subbutton a {
+    float: right;
+    padding: 25px 82px 0 0
+}
+
+.subbutton img {
+    width: 167px;
+}
+
+.text {
+    padding: 2vw;
+}
+
+.text p {
+    font-size: 2vw;
+}
+
+
+/* GRID2 */
+
+.article {
+    height: 100%;
+    margin: 0;
+}
+
+@media screen and (min-width: 896px) {
+    #main {
+        flex-direction: row;
+    }
+    #main>nav,
+    #main>.article {
+        flex: 0 0 26vw;
+    }
+    .subbutton {
+        margin: 0;
+        height: 10vw;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .navbar {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navbar a {
+        text-align: center;
+        padding: 10px;
+    }
+    .navbar li:last-of-type a {
+        border-bottom: none;
+    }
+    .carbox3 {
+        HEIGHT: 961px;
+    }
+    #main>nav {
+        order: -1;
+        height: 106vw;
+    }
+    .grid2x2 {
+        padding: 3px 0px 38px 172px;
+    }
+    .grid1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 391px;
+        margin: 0 0 0 231px;
+    }
+    .text {
+        padding: 0 10vw 0 29vw;
+    }
+    .text p {
+        font-size: 4vw;
+    }
+    .subbutton a {
+        /* float: right; */
+        padding: 0 0 60px 360px;
+        margin: -62px 0 0;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .grid1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 391px;
+        margin: 0 0 0 41px;
+    }
+    .text {
+        padding: 0 10vw 0 16vw;
+    }
+    .grid2x2 {
+        padding: 15px;
+        margin: 85px 0 0 0;
+    }
+    .cardbox {
+        margin: 7px 34px 17px 0;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+        width: 90vw;
+    }
+    .bi1 {
+        width: 77px;
+        margin: -66px 0 0 320px;
+    }
+    .footnav {
+        width: 100%;
+        margin: -39px 0 0 0px;
+        padding: 0 0 0 281px;
+    }
+    .footnav2 {
+        width: 100%;
+        margin: -39px 0 0 0px;
+        padding: 0 0 0 281px;
+    }
+    .subbutton {
+        margin: 165px 0 0 -192px;
+        height: 0vw;
+    }
+}
